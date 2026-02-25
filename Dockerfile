@@ -24,8 +24,8 @@ RUN mkdir /etc/jupyterhub
 WORKDIR /etc/jupyterhub
 
 # Change this with your certificate files (or see modification of the last line)  
-COPY ssl/key.pem . 
-COPY ssl/cert.pem . 
+# COPY ssl/key.pem . 
+# COPY ssl/cert.pem . 
 
 COPY home /home
 RUN ln -s /home/jupyterhub_config.py jupyterhub_config.py 
